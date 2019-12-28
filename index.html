@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center mt-4 mb-4">
+            <b>Weight Converter</b>
+        </h2>
+        <div>
+            <form name="myform">
+                <div class="form-group">
+                    <input type="number" name="lbsinput" id="lbsinput" 
+                    class="form-control" onkeypress="pressed()" placeholder="Type pounds">
+                </div>
+            </form>
+            <div>
+                <div id="display">
+                </div>
+                <div class="card mt-2 mb-2 ">
+                  <div class="card-body bg-primary rounded">
+                    <div class="p-1 mb-2 bg-primary text-white">
+                        <span>KG :</span>
+                        <span id="kg">0</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-2 mb-2">
+                  <div class="card-body bg-success">
+                    <div class="p-1 mb-2 bg-success text-white">
+                        <span>Gram : </span>
+                        <span id="gram">0</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-2 mb-2" >
+                  <div class="card-body bg-danger">
+                    <div class="p-1 mb-2 bg-danger text-white">
+                        <span>Ounces : </span>
+                        <span id="ounce">0</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+    <script src="js/main.js"></script>
+</html>
